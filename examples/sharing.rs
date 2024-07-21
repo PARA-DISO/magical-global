@@ -36,6 +36,9 @@ fn main() {
     // Check to see if the thread is closed
     // If the thread is not closed, it will not be executed.
     println!("Res: {}", res);
+    // take ownership of the sharing data
+    let _ = magical::take_at::<TestData>(0);
+
 }
 fn thread_func() -> usize {
     println!("start loop @ Thread");
