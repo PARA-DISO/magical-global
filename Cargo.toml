@@ -1,0 +1,35 @@
+[package]
+name = "magical-global"
+version = "0.1.0"
+edition = "2021"
+[lints]
+workspace = true
+[workspace]
+members = [
+  "magical-global-sys",
+]
+[dependencies]
+
+magical-global-sys = {path="./magical-global-sys"}
+
+[workspace.lints.rust]
+# rust_2018_idioms = "forbid"
+# missing_debug_implementations = "deny"
+# missing_docs = "deny"
+# unsafe_code = "deny"
+# unused_results = "deny"
+
+[workspace.lints.clippy]
+# type-complexity = "allow"
+# semicolon_if_nothing_returned = "deny"
+# trivially-copy-pass-by-ref = "deny"
+# default_trait_access = "deny"
+# match-wildcard-for-single-variants = "deny"
+# redundant-closure-for-method-calls = "deny"
+# filter_map_next = "deny"
+# manual_let_else = "deny"
+# unused_async = "deny"
+# from_over_into = "deny"
+# needless_borrow = "deny"
+# new_without_default = "deny"
+# useless_conversion = "deny"
